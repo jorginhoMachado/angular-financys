@@ -25,3 +25,18 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## DEPENDENCIAS
+
+    npm i jquery --save
+    npm i bootstrap --save 
+    npm i angular-imask --save 
+    npm i currency-formatter --save 
+    npm i moment --save 
+    npm i toastr --save 
+    npm i primeng --save
+    npm i primeicons --save
+    npm i chart.js --save
+    npm i angular-in-memory-web-api --save
+    

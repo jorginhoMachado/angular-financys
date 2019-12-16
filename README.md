@@ -28,7 +28,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ## DEPENDENCIAS
-
+    ng new ´app-name´ --routing --skip-tests
     npm i jquery --save
     npm i bootstrap --save 
     npm i angular-imask --save 

@@ -65,6 +65,12 @@ export class EntryFormComponent implements OnInit, AfterContentChecked {
       id: [null],
       name: [null, [Validators.required, Validators.minLength(2)]],
       description: [null],
+      type: [null, [Validators.required]],
+      amount: [null, [Validators.required]],
+      date: [null, [Validators.required]],
+      paid: [null, [Validators.required]],
+      categoryId: [null, [Validators.required]],
+
 
     });
   }
@@ -83,10 +89,10 @@ export class EntryFormComponent implements OnInit, AfterContentChecked {
 
   private setPageTitle() {
     if(this.currentAction === 'new') {
-      this.pageTitle = 'Cadastro de Nova Categoria'
+      this.pageTitle = 'Cadastro de Novo Lançamento'
     } else {
       const entryName = this.entry.name || '';
-      this.pageTitle = 'Editando Categoria: ' + entryName
+      this.pageTitle = 'Editando Lançamento: ' + entryName
     }
   }
 

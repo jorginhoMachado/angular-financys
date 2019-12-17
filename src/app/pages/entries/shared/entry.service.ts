@@ -1,13 +1,11 @@
-import { Injectable } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import { Injectable, Injector } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
 import {Observable, throwError} from "rxjs";
 import {Entry} from "./entry.model";
 import {catchError, flatMap, map} from "rxjs/operators";
 import {CategoryService} from "../../categories/shared/category.service";
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable({providedIn: 'root'})
 export class EntryService {
 
   private apiPath:string = 'api/entries';

@@ -11,34 +11,34 @@ import {CategoryService} from "../../categories/shared/category.service";
 })
 export class ReportsComponent implements OnInit {
 
-  expenseTotal: any = 0;
-  revenueTotal: any = 0;
-  balance: any = 0;
+  // expenseTotal: any = 0;
+  // revenueTotal: any = 0;
+  // balance: any = 0;
+  //
+  // expenseChartData: any;
+  // revenueChartData: any;
+  //
+  // chartOptions = {
+  //   scales: {
+  //     yAxes: [{
+  //       ticks: {
+  //         beginAtZero: true
+  //       }
+  //     }]
+  //   }
+  // };
+  //
+  // categories: Category[] = [];
+  // entries: Entry[] = [];
 
-  expenseChartData: any;
-  revenueChartData: any;
+  // @ViewChild('month') month: ElementRef = null;
+  // @ViewChild('year') year: ElementRef = null;
 
-  chartOptions = {
-    scales: {
-      yAxes: [{
-        ticks: {
-          beginAtZero: true
-        }
-      }]
-    }
-  };
-
-  categories: Category[] = [];
-  entries: Entry[] = [];
-
-  @ViewChild('month') month: ElementRef = null;
-  @ViewChild('year') year: ElementRef = null;
-
-  constructor(private entryService: EntryService, private categoryService: CategoryService) { }
+  // constructor(private entryService: EntryService, private categoryService: CategoryService) { }
 
   ngOnInit() {
-    this.categoryService.getAll()
-      .subscribe(categories => this.categories = categories);
+    // this.categoryService.getAll()
+    //   .subscribe(categories => this.categories = categories);
   }
 
   generateReports() {

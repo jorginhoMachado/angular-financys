@@ -39,4 +39,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
     npm i primeicons --save
     npm i chart.js --save
     npm i angular-in-memory-web-api --save
+    npm install @angular/cdk --save
+    npm install @fullcalendar/core --save
     

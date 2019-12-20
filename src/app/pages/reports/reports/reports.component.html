@@ -1,7 +1,12 @@
-<!--BREADCRUMB-->
-<app-bread-crumb [items]="[{text: 'Relatório de Receitas e Despesas'}]"></app-bread-crumb>
-<!--TITLE-->
-<app-page-header page-title="Relatório de Receitas e Despesas" [show-button]="false"></app-page-header>
+<app-bread-crumb
+  [items]="[{text: 'Relatório de Receitas e Despesas'}]"
+></app-bread-crumb>
+
+<app-page-header
+  page-title="Relatório de Receitas e Despesas"
+  [show-button]="false"
+></app-page-header>
+
 
 <div class="card">
   <div class="card-header">
@@ -12,7 +17,7 @@
     <div class="form-row">
       <div class="form-group col-md-7">
         <label for="month">Mês</label>
-        <select id="month" class="form-control" #month name="month" >
+        <select #month name="month" id="month" class="form-control">
           <option value="">Selecione um mês</option>
           <option value="1">Janeiro</option>
           <option value="2">Fevereiro</option>
@@ -31,7 +36,7 @@
 
       <div class="form-group col-md-5">
         <label for="year">Ano</label>
-        <select id="year" class="form-control" #year name="year">
+        <select #year name="year" id="year" class="form-control">
           <option value="">Selecione um ano</option>
           <option value="2016">2016</option>
           <option value="2017">2017</option>
@@ -44,7 +49,9 @@
 
     <div class="form-row">
       <div class="col-md text-right">
-        <button type="button" (click)="generateReports()" class="btn btn-primary">Gerar Relatórios</button>
+        <button type="button" (click)="generateReports()" class="btn btn-primary">
+          Gerar Relatórios
+        </button>
       </div>
     </div>
   </div>
@@ -57,7 +64,7 @@
     </div>
     <div class="card-body">
       <h3 class="card-title">
-<!--        {{revenueTotal}}-->
+        {{revenueTotal}}
       </h3>
     </div>
   </div>
@@ -68,7 +75,7 @@
     </div>
     <div class="card-body">
       <h3 class="card-title">
-<!--        {{expenseTotal}}-->
+        {{expenseTotal}}
       </h3>
     </div>
   </div>
@@ -79,7 +86,7 @@
     </div>
     <div class="card-body">
       <h3 class="card-title">
-<!--        {{balance}}-->
+        {{balance}}
       </h3>
     </div>
   </div>
@@ -89,10 +96,10 @@
 
 <div class="row mt-5 mb-4">
   <div class="col-md-6">
-<!--    <p-chart type="bar" [data]="revenueChartData" [options]="chartOptions"></p-chart>-->
+    <p-chart type="bar" [data]="revenueChartData" [options]="chartOptions"></p-chart>
   </div>
 
   <div class="col-md-6">
-<!--    <p-chart type="bar" [data]="expenseChartData" [options]="chartOptions"></p-chart>-->
+    <p-chart type="bar" [data]="expenseChartData" [options]="chartOptions"></p-chart>
   </div>
 </div>
